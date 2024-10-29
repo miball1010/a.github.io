@@ -40,8 +40,8 @@
     <!-- preload -->
     <link rel="preload" href="assets/images/slogan1.png" as="image">
     <link rel="preload" href="assets/images/slogan2.png" as="image">
-    <link rel="preload" href="assets/images/bg1.png" as="image">
-    <link rel="preload" href="assets/images/bg2.png" as="image">
+    <link rel="preload" href="assets/images/bg1.jpg" as="image">
+    <link rel="preload" href="assets/images/bg2.jpg" as="image">
     <link rel="preload" href="assets/images/girl.png" as="image">
     <link rel="preload" href="assets/images/bike.png" as="image">
 
@@ -57,7 +57,7 @@
 
 <body>
     <div id="app">
-        <img src="assets/images/bg1.png" alt="" style="display: none;">
+        <img src="assets/images/bg1.jpg" alt="" style="display: none;">
 
         <div class="preload" :class="{active:!isPreload}">
             <img class="preload_img" src="assets/images/acorn.png" alt="">
@@ -119,7 +119,7 @@
             <img src="assets/images/slogan1.png" alt="" class="slogan1">
             <img src="assets/images/slogan2.png" alt="" class="slogan2">
 
-            <img src="assets/images/bg2.png" alt="" class="bg2">
+            <img src="assets/images/bg2.jpg" alt="" class="bg2">
             <img src="assets/images/bike.png" alt="" class="bike">
             <img src="assets/images/leaf4.png" alt="" class="leaf4">
             <img src="assets/images/leaf5.png" alt="" class="leaf5">
@@ -150,7 +150,8 @@
             <img src="assets/images/bird.png" alt="" class="bird2" loading="lazy">
             <img src="assets/images/bird.png" alt="" class="bird3" loading="lazy">
             <div class="container">
-                <div class="title"><img src="assets/images/leaf1.png" alt="" loading="lazy">最後一哩路，<br class="br_sm">3000人大調查</div>
+                <div class="title"><img src="assets/images/leaf1.png" alt="" loading="lazy">最後一哩路，<br
+                        class="br_sm">3000人大調查</div>
 
                 <div class="chart">
                     <div class="subtitle">Q1：有一天我們會離開世間，對於財產、私人擁有物、後事安排，你是否做好準備？</div>
@@ -400,7 +401,7 @@
 
         <!-- 終活清單規劃 -->
         <div class="section section6">
-            <img src="assets/images/bg2.png" alt="" class="bg4" loading="lazy">
+            <img src="assets/images/bg2.jpg" alt="" class="bg4" loading="lazy">
             <div class="container">
                 <div class="title"><img src="assets/images/leaf1.png" alt="" loading="lazy">終活清單規劃</div>
                 <div class="text">
@@ -452,7 +453,8 @@
                         </div>
                     </a>
                     <div class="person_box special wow animate__animated animate__flipInX" id="specialDiv">
-                        <img src="assets/images/person/person_no.jpg" alt="" class="person_img" alt="say goodbye" loading="lazy">
+                        <img src="assets/images/person/person_no.jpg" alt="" class="person_img" alt="say goodbye"
+                            loading="lazy">
                     </div>
                     <a :href="item.link" class="person_box" v-for="item in person.slice(4, 8)" target="_blank">
                         <img :src="item.img" alt="" class="person_img" loading="lazy">
@@ -478,7 +480,8 @@
                             <div class="text name">{{item.name}}</div>
                             <hr class="dashline">
                             <a :href="item.link" target="_blank">
-                                <div class="moreBtn"><img src="assets/images/arrow.svg" alt="" loading="lazy">{{item.category}}</div>
+                                <div class="moreBtn"><img src="assets/images/arrow.svg" alt=""
+                                        loading="lazy">{{item.category}}</div>
                             </a>
                         </div>
                     </div>
@@ -494,14 +497,18 @@
         <!-- fixed_right -->
         <div class="fixed_right" :class="{ active : isScroll }">
             <div class="web">
-                <div class="leaf_btn btn1" @click="popup1_click"><img src="assets/images/leaf6.png" alt="" loading="lazy">終活<br>清單
+                <div class="leaf_btn btn1" @click="popup1_click"><img src="assets/images/leaf6.png" alt=""
+                        loading="lazy">終活<br>清單
                 </div>
-                <div class="leaf_btn btn2" @click="popup2_click"><img src="assets/images/leaf1.png" alt="" loading="lazy">遺願<br>清單
+                <div class="leaf_btn btn2" @click="popup2_click"><img src="assets/images/leaf1.png" alt=""
+                        loading="lazy">遺願<br>清單
                 </div>
             </div>
             <div class="mb">
-                <div class="leaf_btn btn1" @click="popup1_click"><img src="assets/images/leaf_btn1.png" alt="" loading="lazy"></div>
-                <div class="leaf_btn btn2" @click="popup2_click"><img src="assets/images/leaf_btn2.png" alt="" loading="lazy"></div>
+                <div class="leaf_btn btn1" @click="popup1_click"><img src="assets/images/leaf_btn1.png" alt=""
+                        loading="lazy"></div>
+                <div class="leaf_btn btn2" @click="popup2_click"><img src="assets/images/leaf_btn2.png" alt=""
+                        loading="lazy"></div>
             </div>
             <div class="fixed_go_top" @click="scrollTo('section1')">
                 <img src="assets/images/go-to-top.svg" alt="" loading="lazy">
@@ -512,8 +519,10 @@
         <div class="popup" :class="{active:popup1_open}">
             <div class="popup_bg">
                 <div class="popup_content popup1">
+                    <img src="assets/images/popup1.png" alt="" class="popup_imgbg" loading="lazy">
                     <div class="close_area">
-                        <div class="popup_close" @click="popup1_close"><img src="assets/images/cross.svg" alt="" loading="lazy"></div>
+                        <div class="popup_close" @click="popup1_close"><img src="assets/images/cross.svg" alt=""
+                                loading="lazy"></div>
                     </div>
                     <div class="popup_content_box">
                         <div class="popup_top">
@@ -524,7 +533,8 @@
                                 <div class="popup_option popup1" v-for="item in popup1"
                                     :class="{active : item.checked ,special:item.many}">
                                     <input type="checkbox" value="1" v-model="item.checked" @click="popup_click">
-                                    <div class="dot popup1"><img src="assets/images/check_1.svg" alt="" class="check" loading="lazy">
+                                    <div class="dot popup1"><img src="assets/images/check_1.svg" alt="" class="check"
+                                            loading="lazy">
                                     </div>
                                     <label>
                                         {{item.text}}
@@ -558,8 +568,10 @@
             <div class="popup_bg">
                 <!-- 問題部分 -->
                 <div class="popup_content popup2" :class="{active:vote_open}">
+                    <img src="assets/images/popup2.png" alt="" class="popup_imgbg" loading="lazy">
                     <div class="close_area">
-                        <div class="popup_close" @click="popup2_close"><img src="assets/images/cross.svg" alt="" loading="lazy"></div>
+                        <div class="popup_close" @click="popup2_close"><img src="assets/images/cross.svg" alt=""
+                                loading="lazy"></div>
                     </div>
                     <div class="popup_content_box">
                         <div class="popup_top">
@@ -573,7 +585,8 @@
                                     :class="{active : item.checked }">
                                     <input type="checkbox" :id="item.id" :value="item.optionValue"
                                         v-model="item.checked">
-                                    <div class="dot popup2"><img src="assets/images/check_2.svg" alt="" class="check" loading="lazy">
+                                    <div class="dot popup2"><img src="assets/images/check_2.svg" alt="" class="check"
+                                            loading="lazy">
                                     </div>
                                     <label :for="item.id">{{item.text}}<input type="text" v-if="item.textbox"
                                             v-model="inputText" class="textbox"></label>
@@ -591,7 +604,8 @@
                 <!-- 結果部分 -->
                 <div class="vote_content" :class="{active:vote_open}">
                     <div class="close_area">
-                        <div class="popup_close" @click="popup2_close"><img src="assets/images/cross.svg" alt="" loading="lazy"></div>
+                        <div class="popup_close" @click="popup2_close"><img src="assets/images/cross.svg" alt=""
+                                loading="lazy"></div>
                     </div>
                     <div class="popup_top">
                         <div class="subtitle">「如果明天就是下輩子，你最想做哪件事？」</div>
@@ -603,7 +617,8 @@
                             <div v-for="(item,index) in comment" class="comment_box" :key="index"
                                 :class="{active:change,last: index === comment.length - 1}">
                                 <div class="comment_content">
-                                    <div class="comment_img"><img src="assets/images/acorn.png" alt="" loading="lazy"></div>
+                                    <div class="comment_img"><img src="assets/images/acorn.png" alt="" loading="lazy">
+                                    </div>
                                     <div class="text">{{item}}</div>
                                 </div>
                             </div>
