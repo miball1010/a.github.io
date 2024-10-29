@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="Shortcut Icon" href="https://www.businesstoday.com.tw/lazyweb/web/img/favicon.ico">
+    <title>好好說再見- 準備好最後一哩，自在過活每一天</title>
+
+    <!--清cache -->
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="content-type" content="no-cache, must-revalidate" />
+    <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT" />
+
+    <!--SEO-->
+    <meta name="keywords" content="好好說再見, 善終, 預立醫療決定, 遺囑, 遺產分配, 安寧, 靈性關懷, 吳念真, 熊美玲">
+    <meta name="description"
+        content="台灣將在2025年邁入「超高齡社會」，隨著平均壽命延長，意味著人們有更多時間安享晚年。然而多數人只做「生涯規劃」，卻不知做「生死計畫」，面對生命必將迎來的最終旅程，你會怎麼安排餘生？">
+    <meta property="og:title" content="好好說再見- 準備好最後一哩，自在過活每一天">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="台灣將在2025年邁入「超高齡社會」，隨著平均壽命延長，意味著人們有更多時間安享晚年。然而多數人只做「生涯規劃」，卻不知做「生死計畫」，面對生命必將迎來的最終旅程，你會怎麼安排餘生？">
+    <meta property="og:image"
+        content="https://www.businesstoday.com.tw/bt_topic/2024/timetosaygoodbye/assets/images/share.jpg">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/main.css?20240903">
+
+    <!-- wow -->
+    <script src="assets/js/wow.min.js"></script>
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- preload -->
+    <link rel="preload" href="assets/images/slogan1.png" as="image">
+    <link rel="preload" href="assets/images/slogan2.png" as="image">
+    <link rel="preload" href="assets/images/bg1.png" as="image">
+    <link rel="preload" href="assets/images/bg2.png" as="image">
+    <link rel="preload" href="assets/images/girl.png" as="image">
+    <link rel="preload" href="assets/images/bike.png" as="image">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8H9YJZQJP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-E8H9YJZQJP');
+    </script>
+</head>
+
+<body>
+    <div id="app">
+        <img src="assets/images/bg1.png" alt="" style="display: none;">
+
+        <div class="preload" :class="{active:!isPreload}">
+            <img class="preload_img" src="assets/images/acorn.png" alt="">
+        </div>
+
+        <div class="loading" :class="{active:isLoading}">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- menu bar -->
+        <div class="navbar">
+            <div class="logo">
+                <a href="https://www.businesstoday.com.tw/" target="_blank"><img src="assets/images/logos/logo.svg"
+                        alt=""></a>
+                <a href="https://thebetteraging.businesstoday.com.tw/" target="_blank"><img
+                        src="assets/images/logos/logo-thebetterage.svg" alt=""></a>
+            </div>
+            <ul class="menu" :class="{active:menuIsopen}">
+                <li @click="scrollTo('section2')">最後一哩路，3000人大調查</li>
+                <li @click="scrollTo('section3')">財務安排、預立遺囑</li>
+                <li @click="scrollTo('section4')">預立醫療決定</li>
+                <li @click="scrollTo('section5')">安寧療護註記</li>
+                <li @click="scrollTo('section6')">終活清單規劃</li>
+                <li @click="scrollTo('section7')">他們如何說再見</li>
+                <li class="social_media_mb">
+                    <a href="https://www.facebook.com/BToday/" target="_blank">
+                        <img src="assets/images/logos/logo-fb.svg" alt="">
+                    </a>
+                    <a href="https://line.me/R/ti/p/%40btoday" target="_blank">
+                        <img src="assets/images/logos/logo-line.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/btoday_ig/" target="_blank">
+                        <img src="assets/images/logos/logo-ig.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="social_media">
+                <a href="https://www.facebook.com/BToday/" target="_blank"> <img src="assets/images/logos/logo-fb.svg"
+                        alt=""></a>
+                <a href="https://line.me/R/ti/p/%40btoday" target="_blank"> <img src="assets/images/logos/logo-line.svg"
+                        alt=""></a>
+                <a href="https://www.instagram.com/btoday_ig/" target="_blank">
+                    <img src="assets/images/logos/logo-ig.svg" alt="">
+                </a>
+            </div>
+            <div class="menu_btn" @click="menuIsopen=!menuIsopen">
+                <img v-if="menuIsopen" src="assets/images/cross.svg" alt="">
+                <img v-else src="assets/images/menu_btn.svg" alt="">
+            </div>
+        </div>
+
+        <!-- 主視覺 -->
+        <div class="section section1">
+
+            <img src="assets/images/slogan1.png" alt="" class="slogan1">
+            <img src="assets/images/slogan2.png" alt="" class="slogan2">
+
+            <img src="assets/images/bg2.png" alt="" class="bg2">
+            <img src="assets/images/bike.png" alt="" class="bike">
+            <img src="assets/images/leaf4.png" alt="" class="leaf4">
+            <img src="assets/images/leaf5.png" alt="" class="leaf5">
+            <img src="assets/images/bird.png" alt="" class="bird">
+            <img src="assets/images/book.png" alt="" class="book">
+            <div class="leaf1">
+                <img src="assets/images/leaf1.png" alt="">
+            </div>
+            <div class="leaf2">
+                <img src="assets/images/leaf2.png" alt="">
+            </div>
+            <div class="leaf3">
+                <img src="assets/images/leaf3.png" alt="">
+            </div>
+            <div class="container" :style="{opacity:!isPreload?'1':'0'}">
+                <div class="text">台灣將在2025年邁入「超高齡社會」，隨著平均壽命延長，意味著人們有更多時間安享晚年。<br><br>
+                    然而多數人只做「生涯規劃」，卻不知做「生死計畫」，面對生命必將迎來的最終旅程，你會怎麼安排餘生？</div>
+                <hr class="dashline">
+                <a href="https://thebetteraging.businesstoday.com.tw/article/detail/202408200034" target="_blank">
+                    <div class="moreBtn"><img src="assets/images/arrow.svg" alt="">看完整文章</div>
+                </a>
+            </div>
+        </div>
+        <img src="assets/images/girl.png" alt="" class="girl">
+
+        <!-- 最後一哩路，3000人大調查 -->
+        <div class="section section2">
+            <img src="assets/images/bird.png" alt="" class="bird2" loading="lazy">
+            <img src="assets/images/bird.png" alt="" class="bird3" loading="lazy">
+            <div class="container">
+                <div class="title"><img src="assets/images/leaf1.png" alt="" loading="lazy">最後一哩路，<br class="br_sm">3000人大調查</div>
+
+                <div class="chart">
+                    <div class="subtitle">Q1：有一天我們會離開世間，對於財產、私人擁有物、後事安排，你是否做好準備？</div>
+                    <div v-if="chart1" class="iframe_loading">
+                        <div class="lds-ellipsis">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div :style="{'opacity':chart1?'0':'1'}">
+                        <iframe @load="handleChartLoad('chart1')" id="chart1" loading="lazy"
+                            src='https://flo.uri.sh/visualisation/19081352/embed' title='Interactive or visual content'
+                            class='flourish-embed-iframe' frameborder='0' scrolling='no'
+                            style="width:100%; height:600px;"
+                            sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+                        <div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a
+                                class='flourish-credit'
+                                href='https://public.flourish.studio/visualisation/19081352/?utm_source=embed&utm_campaign=visualisation/19081352'
+                                target='_top' style='text-decoration:none!important'><img alt='Made with Flourish'
+                                    src='https://public.flourish.studio/resources/made_with_flourish.svg'
+                                    style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
+                            </a></div>
+                    </div>
+                </div>
+
+                <div class="chart">
+                    <div class="subtitle">Q2：你認同自然死嗎？</div>
+                    <div class="text">所謂「自然死」，即是「安寧緩和醫療」，當病情進入臨終時，不特意以外力延長死亡過程（如心肺復甦術、插管等）</div>
+                    <div v-if="chart2" class="iframe_loading">
+                        <div class="lds-ellipsis">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div :style="{'opacity':chart2?'0':'1'}">
+                        <iframe @load="handleChartLoad('chart2')" id="chart2" loading="lazy"
+                            src='https://flo.uri.sh/visualisation/19081463/embed' title='Interactive or visual content'
+                            class='flourish-embed-iframe' frameborder='0' scrolling='no'
+                            style="width:100%; height:600px;"
+                            sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+                        <div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a
+                                class='flourish-credit'
+                                href='https://public.flourish.studio/visualisation/19081463/?utm_source=embed&utm_campaign=visualisation/19081463'
+                                target='_top' style='text-decoration:none!important'><img alt='Made with Flourish'
+                                    src='https://public.flourish.studio/resources/made_with_flourish.svg'
+                                    style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
+                            </a></div>
+                    </div>
+                </div>
+
+                <div class="chart">
+                    <div class="subtitle">Q3：你簽署「拒絕心肺復甦術或維生醫療」（Do not resuscitation，DNR）了嗎？</div>
+                    <div v-if="chart3" class="iframe_loading">
+                        <div class="lds-ellipsis">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div :style="{'opacity':chart3?'0':'1'}">
+                        <iframe @load="handleChartLoad('chart3')" id="chart3" loading="lazy"
+                            src='https://flo.uri.sh/visualisation/19081500/embed' title='Interactive or visual content'
+                            class='flourish-embed-iframe' frameborder='0' scrolling='no'
+                            style="width:100%; height:600px;"
+                            sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+                        <div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a
+                                class='flourish-credit'
+                                href='https://public.flourish.studio/visualisation/19081500/?utm_source=embed&utm_campaign=visualisation/19081500'
+                                target='_top' style='text-decoration:none!important'><img alt='Made with Flourish'
+                                    src='https://public.flourish.studio/resources/made_with_flourish.svg'
+                                    style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
+                            </a></div>
+                    </div>
+                </div>
+
+                <div class="chart">
+                    <div class="subtitle">Q4：你簽署「預立醫療決定書」（Advance Decision，AD）了嗎？</div>
+                    <div class="text">
+                        「預立醫療決定書」是一份事前表達醫療意願的文件和規劃書，在未來一旦「符合特定臨床條件」時，可以選擇「希望」或「不希望」接受維持生命治療及人工營養／流體餵養。<br><br>
+                        <span style="font-size: 0.9rem; color: #668aab; line-height: 1.2rem;">
+                            ※特定臨床條件：包括末期病人、不可逆轉之昏迷、永久植物人狀態、極重度失智、衛福部、其他經中央疾管機關公告之疾病等5種情況。<br>
+                            ※維持生命治療：如插管、壓胸、電擊、洗腎、抗生素等。<br>
+                            ※人工營養／流體餵養：如靜脈注射、鼻胃管等。
+                        </span>
+                    </div>
+                    <div v-if="chart4" class="iframe_loading">
+                        <div class="lds-ellipsis">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div :style="{'opacity':chart4?'0':'1'}">
+                        <iframe @load="handleChartLoad('chart4')" id="chart4" loading="lazy"
+                            src='https://flo.uri.sh/visualisation/19081513/embed' title='Interactive or visual content'
+                            class='flourish-embed-iframe' frameborder='0' scrolling='no'
+                            style="width:100%; height:600px;"
+                            sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+                        <div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a
+                                class='flourish-credit'
+                                href='https://public.flourish.studio/visualisation/19081513/?utm_source=embed&utm_campaign=visualisation/19081513'
+                                target='_top' style='text-decoration:none!important'><img alt='Made with Flourish'
+                                    src='https://public.flourish.studio/resources/made_with_flourish.svg'
+                                    style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
+                            </a></div>
+                    </div>
+                </div>
+                <div class="chart">
+                    <span style="font-size: 0.9rem; color: #668aab; line-height: 1.2rem;">
+                        有效問卷：3217份 <br>
+                        訪問對象：全台50歲以上民眾（居住地涵蓋20縣市，各縣市佔比2.5～6.9％）
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 財務安排、預立遺囑 -->
+        <div class="section section3">
+            <div class="container wow animate__animated animate__slideInLeft">
+                <div class="title"><img src="assets/images/leaf1.png" alt="" loading="lazy">財務安排、預立遺囑</div>
+                <div class="text">
+                    別讓你的遺產，成為家庭失和的禍根。你或許認為寫下一紙遺囑，交待財產傳承規劃，就能高枕無憂，實際上，預立遺囑的眉角，遠比你想像多，稍有不慎就會讓手足對簿公堂。<br><br>
+                    譬如常見的自書遺囑，得確保親筆手寫，沒有失智疑慮，否則，有心人仍會質疑它的效力。<br><br>
+                    如何有智慧地透露遺囑內容，給身旁家人，也能避免不必要的誤會、紛爭。善用遺囑信託條款，也能更有效管理財產，輕鬆節稅。
+                </div>
+                <hr class="dashline">
+                <a href="https://thebetteraging.businesstoday.com.tw/article/detail/202408280056" class="article_box"
+                    target="_blank">
+                    <div class="articleImg"> <img
+                            src="https://doqvf81n9htmm.cloudfront.net/data/crop_article/163594/KENS8256.jpeg_1140x855.jpg"
+                            alt="" loading="lazy"></div>
+                    <div class="articleText">
+                        <div class="subtitle">90歲夫妻財產遭3兒欲贈與過戶，求助律師竟被告！吳挺絹律師：如果不打算財產，就會被人打算</div>
+                        <div class="moreBtn"><img src="assets/images/arrow.svg" alt="" loading="lazy">看完整文章</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 預立醫療決定 -->
+        <div class="section section4">
+            <img src="assets/images/bg3.jpg" alt="" class="bg3" loading="lazy">
+            <img src="assets/images/tree.png" alt="" class="tree" loading="lazy">
+            <img src="assets/images/light.png" alt="" class="light" loading="lazy">
+            <div class="light"></div>
+            <div class="container wow animate__animated animate__slideInRight">
+                <div class="title"><img src="assets/images/leaf1.png" alt="" loading="lazy">預立醫療決定</div>
+                <div class="text">
+                    我們永遠不知道疾病、意外何時會降臨。<br><br>
+                    當我們簽下預立醫療決定書，內容會註記在健保卡，即便你因故失去意識時，決策也能受保障。依照你的意志，決定是否該做生命維持、人工營養餵食，「由你自己決定，如何走完最後一哩路」。
+                </div>
+                <hr class="dashline">
+                <a href="https://thebetteraging.businesstoday.com.tw/article/detail/202408130036" class="article_box"
+                    target="_blank">
+                    <div class="articleImg"> <img
+                            src="https://doqvf81n9htmm.cloudfront.net/data/crop_article/162979/shutterstock_2419278001.jpg_1140x855.jpg"
+                            alt="" loading="lazy"></div>
+                    <div class="articleText">
+                        <div class="subtitle">為何要預立醫療決定？成了病人，你很難保有醫療決定權…簽署率不到1%，問題出在哪？</div>
+                        <div class="moreBtn"><img src="assets/images/arrow.svg" alt="" loading="lazy">看完整文章</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 安寧療護註記 -->
+        <div class="section section5">
+            <div class="container">
+                <div class="title"><img src="assets/images/leaf1.png" alt="">安寧療護註記</div>
+                <div class="text">
+                    台灣推動安寧療護多年，儘管國人多數認可這個觀念，但對於安寧仍存在許多迷思，認為安寧療護就是等死、放棄治療，甚至跟「安樂死」劃上等號。<br><br>
+                    事實上，安寧療護有多種形式，也不是只有住在醫院才能接受治療，能依病人心願選擇居家或在社區，在生命最後階段得到妥適安心的照顧。
+                </div>
+                <div class="question ">
+                    <div class="question_box wow animate__animated animate__bounceIn">
+                        <div class="question_title text" @click="Q1Isopen=!Q1Isopen">
+                            Q1：安寧病房是等死嗎？
+                            <div class="question_pattern">
+                                <img src="assets/images/plus.svg" alt="" :class="{active : !Q1Isopen}">
+                            </div>
+                            <div class="question_pattern">
+                                <img src="assets/images/minus.svg" alt="" :class="{active : Q1Isopen}">
+                            </div>
+                        </div>
+                        <div class="answer text" :class="{active : Q1Isopen}">
+                            A：安寧病房與一般病房最大的差異，是將目標從「治癒疾病」轉向「積極的症狀控制」，並由專業團隊提供兼顧身體、心理、社會、靈性的全方位照顧。<br><br>
+                            當病況穩定後，病人可以出院，銜接安寧居家，由居家團隊定期到宅照顧。所以並非大家想像中「住進去等死」、「一路住到死」，而是讓末期病患在生命最後一程時間得到適當的照顧。
+                        </div>
+                    </div>
+                    <div class="question_box wow animate__animated animate__bounceIn" data-wow-delay="0.2s">
+                        <div class="question_title text" @click="Q2Isopen=!Q2Isopen">
+                            Q2：安寧療護是安樂死嗎？
+                            <div class="question_pattern">
+                                <img src="assets/images/plus.svg" alt="" :class="{active : !Q2Isopen}">
+                            </div>
+                            <div class="question_pattern">
+                                <img src="assets/images/minus.svg" alt="" :class="{active : Q2Isopen}">
+                            </div>
+                        </div>
+                        <div class="answer text" :class="{active : Q2Isopen}">
+                            A：當然不是！安樂死是透過人為「加工」且「加速」縮短生命。安寧療護則是透過專業團隊協助，讓末期病人度過最後一段有意義、有品質的生活，安適活到最後一刻，偏向「自然死」，絕不會不給予治療，而刻意結束病人生命。
+                        </div>
+                    </div>
+                    <div class="question_box wow animate__animated animate__bounceIn" data-wow-delay="0.4s">
+                        <div class="question_title text" @click="Q3Isopen=!Q3Isopen">
+                            Q3：住安寧病房很貴嗎？
+                            <div class="question_pattern">
+                                <img src="assets/images/plus.svg" alt="" :class="{active : !Q3Isopen}">
+                            </div>
+                            <div class="question_pattern">
+                                <img src="assets/images/minus.svg" alt="" :class="{active : Q3Isopen}">
+                            </div>
+                        </div>
+                        <div class="answer text" :class="{active : Q3Isopen}">
+                            A：目前住安寧病房的給付標準，皆按全民健保標準。如果住3人房，不必付費；如果住2人房，1天約付1000多元；住1人房則約2000多元的病房補助差額，視各開辦病房醫院收費標準而定。<br><br>
+                            醫藥費部份，如果是健保署未核准給付的藥品或治療才需付費。中低收入戶或經濟困難的病家，安寧團隊的社工師也會協助連結政府或安寧照顧基金會弱勢補助等民間資源，給予協助。
+                        </div>
+                    </div>
+                </div>
+                <hr class="dashline">
+                <div class="article">
+                    <a href="https://thebetteraging.businesstoday.com.tw/article/detail/202408110015"
+                        class="article_box wow animate__animated animate__zoomIn" target="_blank">
+                        <div class="articleImg"> <img
+                                src="https://doqvf81n9htmm.cloudfront.net/data/crop_article/162903/shutterstock_18421564180.jpg_1140x855.jpg"
+                                alt=""></div>
+                        <div class="subtitle">70歲癌末法師白天講經，晚上睡棺材！他「與身體和解」在家尊嚴離世…4照護模式讓末期病人安寧善終</div>
+                        <div class="moreBtn"><img src="assets/images/arrow.svg" alt="">看完整文章</div>
+                    </a>
+                    <a href="https://thebetteraging.businesstoday.com.tw/article/detail/202408200042"
+                        class="article_box wow animate__animated animate__zoomIn" data-wow-delay="0.2s" target="_blank">
+                        <div class="articleImg"> <img
+                                src="https://doqvf81n9htmm.cloudfront.net/data/crop_article/163239/Shutterstock_741615118.jpg_1140x855.jpg"
+                                alt=""></div>
+                        <div class="subtitle">臨終時子女不現身，我選擇做他「沒血緣親人」！靈性關懷陪走生命最後一哩路，讓生死兩相安</div>
+                        <div class="moreBtn"><img src="assets/images/arrow.svg" alt="">看完整文章</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 終活清單規劃 -->
+        <div class="section section6">
+            <img src="assets/images/bg2.png" alt="" class="bg4">
+            <div class="container">
+                <div class="title"><img src="assets/images/leaf1.png" alt="">終活清單規劃</div>
+                <div class="text">
+                    源自日本的終活，意指「為了人生終點而進行的準備活動」，目的在於對人生最後一哩路預作準備，消解了對死亡的不安，讓人不留遺憾與負擔的告別。<br><br>
+                    這包括整理財務狀況、預立遺囑、預做醫療決定、老後斷捨離、身後事的安排等等，但終活需要做的只有這些嗎？
+                </div>
+                <hr class="dashline">
+                <div class="article ">
+                    <a href="https://thebetteraging.businesstoday.com.tw/article/detail/202408250010"
+                        class="article_box wow animate__animated animate__zoomIn" target="_blank">
+                        <div class="articleImg"> <img
+                                src="https://doqvf81n9htmm.cloudfront.net/data/crop_article/163438/Shutterstock_2468357581.jpg_1140x855.jpg"
+                                alt=""></div>
+                        <div class="subtitle">算命師斷言活不過半百，她年年寫遺囑「重生」！中年後學會整理人生：勇於拒絕，活成想要的樣子</div>
+                        <div class="moreBtn"><img src="assets/images/arrow.svg" alt="">看完整文章</div>
+                    </a>
+                    <a href="https://thebetteraging.businesstoday.com.tw/article/detail/202408290012"
+                        class="article_box wow animate__animated animate__zoomIn" data-wow-delay="0.2s" target="_blank">
+                        <div class="articleImg"> <img
+                                src="https://doqvf81n9htmm.cloudfront.net/data/crop_article/163619/DONG9735.jpg_1140x855.jpg"
+                                alt=""></div>
+                        <div class="subtitle">孤獨死現場留下一箱箱照片，兒痛哭「原來爸爸沒忘記我」…《人生清理員》：整理的不只遺物，更是人生</div>
+                        <div class="moreBtn"><img src="assets/images/arrow.svg" alt="">看完整文章</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 他們如何說再見 -->
+        <div class="section section7">
+            <div class="container">
+                <div class="title"><img src="assets/images/leaf1.png" alt="">他們如何說再見</div>
+                <div class="text">
+                    生命如同一輛列車，旅途中乘客來去去，然而到站離站，總有人要下車，面對告別，有太多不捨與牽掛，對誰來說又是容易的呢？<br><br>
+                    我們採訪了8個案例，分享他們如何說再見。也許是至親離開、痛別摯愛後，體悟放手是對方留下的生命禮物；也或許是透徹生死後，學會接納失落、珍惜當下，不讓遺憾成為羈絆彼此的枷鎖。<br><br>
+                    詩人說，離別的渡口找不到相送的花，那就致上祝福吧！願我們在離別來臨時，都能安心出發，無憾道別。
+                </div>
+                <hr class="dashline">
+            </div>
+            <div class="big_container">
+                <div class="person">
+                    <a :href="item.link" class="person_box" v-for="item in person.slice(0, 4)" target="_blank">
+                        <img :src="item.img" alt="img" class="person_img">
+                        <div class="person_name">{{item.name}}</div>
+                        <div class="person_title" v-html="item.title" v-if="item.title"></div>
+                        <div class="person_text">{{item.quote}}</div>
+                        <div class="person_hover">
+                            <div class="text">看完整文章</div>
+                        </div>
+                    </a>
+                    <div class="person_box special wow animate__animated animate__flipInX" id="specialDiv">
+                        <img src="assets/images/person/person_no.jpg" alt="" class="person_img" alt="say goodbye">
+                    </div>
+                    <a :href="item.link" class="person_box" v-for="item in person.slice(4, 8)" target="_blank">
+                        <img :src="item.img" alt="" class="person_img">
+                        <div class="person_name">{{item.name}}</div>
+                        <div class="person_title" v-html="item.title" v-if="item.title"></div>
+                        <div class="person_text">{{item.quote}}</div>
+                        <div class="person_hover">
+                            <div class="text">看完整文章</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="subtitle movie">—— 追劇清單 ——</div>
+            <div class="text movie">挑個劇吧！</div>
+            <div class="swiper-container wow animate__animated animate__fadeIn">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" v-for="item in movie" :key="item.name">
+                        <div class="swiper_bgImg"><img :src="item.img" alt=""></div>
+                        <div class="swiper_img"> <img :src="item.img" alt="Image" /></div>
+                        <div class="swiper_text">
+                            <div class="text quote">{{item.quote}}</div>
+                            <div class="text name">{{item.name}}</div>
+                            <hr class="dashline">
+                            <a :href="item.link" target="_blank">
+                                <div class="moreBtn"><img src="assets/images/arrow.svg" alt="">{{item.category}}</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="text" v-html="footerText1"></div>
+            <div class="text" v-html="footerText2"></div>
+        </footer>
+
+        <!-- fixed_right -->
+        <div class="fixed_right" :class="{ active : isScroll }">
+            <div class="web">
+                <div class="leaf_btn btn1" @click="popup1_click"><img src="assets/images/leaf6.png" alt="">終活<br>清單
+                </div>
+                <div class="leaf_btn btn2" @click="popup2_click"><img src="assets/images/leaf1.png" alt="">遺願<br>清單
+                </div>
+            </div>
+            <div class="mb">
+                <div class="leaf_btn btn1" @click="popup1_click"><img src="assets/images/leaf_btn1.png" alt=""></div>
+                <div class="leaf_btn btn2" @click="popup2_click"><img src="assets/images/leaf_btn2.png" alt=""></div>
+            </div>
+            <div class="fixed_go_top" @click="scrollTo('section1')">
+                <img src="assets/images/go-to-top.svg" alt="">
+            </div>
+        </div>
+
+        <!-- popup1 -->
+        <div class="popup" :class="{active:popup1_open}">
+            <div class="popup_bg">
+                <div class="popup_content popup1">
+                    <div class="close_area">
+                        <div class="popup_close" @click="popup1_close"><img src="assets/images/cross.svg" alt=""></div>
+                    </div>
+                    <div class="popup_content_box">
+                        <div class="popup_top">
+                            <div class="subtitle">終活該做的8件事，不留給子女麻煩</div>
+                        </div>
+                        <div class="popup_bottom">
+                            <form action="">
+                                <div class="popup_option popup1" v-for="item in popup1"
+                                    :class="{active : item.checked ,special:item.many}">
+                                    <input type="checkbox" value="1" v-model="item.checked" @click="popup_click">
+                                    <div class="dot popup1"><img src="assets/images/check_1.svg" alt="" class="check">
+                                    </div>
+                                    <label>
+                                        {{item.text}}
+                                        <div v-if="item.many">
+                                            <div class="text leaf_list" v-for="x in item.many"><img
+                                                    src="assets/images/leaf2.png" alt="">{{x}}</div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="progress_bottom ">
+                                    <div class="progress"
+                                        :style="{'transform':progress_change?'scale(1.15)': 'scale(1)'}">
+                                        <div class="outer"
+                                            :style="{'background':`conic-gradient(#8AA6BF ${progress_value * 3.6}deg,#E6E6E6 ${progress_value * 3.6}deg)`}">
+                                            <div class="inner">
+                                                <div class="text">達成度</div>
+                                                <div class="text">{{progress_value}}%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- popup2 -->
+        <div class="popup" :class="{active:popup2_open}">
+            <div class="popup_bg">
+                <!-- 問題部分 -->
+                <div class="popup_content popup2" :class="{active:vote_open}">
+                    <div class="close_area">
+                        <div class="popup_close" @click="popup2_close"><img src="assets/images/cross.svg" alt=""></div>
+                    </div>
+                    <div class="popup_content_box">
+                        <div class="popup_top">
+                            <div class="subtitle">「如果明天就是下輩子，你最想做哪件事？」</div>
+                            <div class="text brown">——在活著時候一定要完成的願望清單</div>
+                        </div>
+                        <div class="popup_bottom">
+                            <div class="red">*最多選3件事</div>
+                            <form action="">
+                                <div class="popup_option popup2" v-for="item in popup2"
+                                    :class="{active : item.checked }">
+                                    <input type="checkbox" :id="item.id" :value="item.optionValue"
+                                        v-model="item.checked">
+                                    <div class="dot popup2"><img src="assets/images/check_2.svg" alt="" class="check">
+                                    </div>
+                                    <label :for="item.id">{{item.text}}<input type="text" v-if="item.textbox"
+                                            v-model="inputText" class="textbox"></label>
+                                </div>
+                                <div class="from_bottom">
+                                    <div class="red">送出後即可觀看大家是怎麼想的喔!</div>
+                                    <div @click="popup_submit" class="popup_submit">送出</div>
+                                    <div class="brown" @click="popup_submit2">已經填寫過?</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 結果部分 -->
+                <div class="vote_content" :class="{active:vote_open}">
+                    <div class="close_area">
+                        <div class="popup_close" @click="popup2_close"><img src="assets/images/cross.svg" alt=""></div>
+                    </div>
+                    <div class="popup_top">
+                        <div class="subtitle">「如果明天就是下輩子，你最想做哪件事？」</div>
+                        <div class="text brown">——在活著時候一定要完成的願望清單</div>
+                        <div id="main" style="width: 100%; max-width: 600px; height: 600px;"></div>
+
+                        <div class="subtitle">我最想做的是＿＿＿＿＿＿＿＿＿＿</div>
+                        <div class="comment">
+                            <div v-for="(item,index) in comment" class="comment_box" :key="index"
+                                :class="{active:change,last: index === comment.length - 1}">
+                                <div class="comment_content">
+                                    <div class="comment_img"><img src="assets/images/acorn.png" alt=""></div>
+                                    <div class="text">{{item}}</div>
+                                </div>
+                            </div>
+                            <div v-if="comment.length==0">
+                                <div class="text">尚未有留言</div>
+                            </div>
+                            <div class="pageBtn" v-else>
+                                <div @click="backPage" class="arrow_btn">
+                                    <img src="assets/images/arrow_btn.svg" alt="">
+                                </div>
+                                <div v-for="num in totalPage" :key="num" @click="() => goToPage(num)"
+                                    :class="{'active':num==page}" class="num_btn">
+                                    {{ num }}
+                                </div>
+                                <div @click="nextPage" class="arrow_btn next">
+                                    <img src="assets/images/arrow_btn.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="from_bottom"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/vue3.min.js"></script>
+    <script src="assets/js/axios.min.js"></script>
+    <script src="assets/js/echarts.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js?20240910"></script>
+    <script src="assets/js/animation.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

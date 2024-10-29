@@ -1,0 +1,234 @@
+{
+    "popup1": [
+        {
+            "text": "準備好安養資金與居住計畫，對醫療與晚年照護的期望有具體方針，已預立醫療決定書。",
+            "checked": false,
+            "many": false
+        },
+        {
+            "text": "做好財產管理及整理，如保險（投保種類、受益人、聯絡窗口），不動產權狀及有價證券等，製作清單備查。",
+            "checked": false,
+            "many": false
+        },
+        {
+            "text": "已決定遺產分配方式，或者已預立遺囑。",
+            "checked": false,
+            "many": false
+        },
+        {
+            "text": "列好未完成的心願清單，例如想旅遊的地方、想做的事。",
+            "checked": false,
+            "many": false
+        },
+        {
+            "text": "定期進行斷捨離，包括衣物、書籍、紀念品等，並預設保留與收藏物件的處理方式、分配對象等。",
+            "checked": false,
+            "many": false
+        },
+        {
+            "text": "設想葬禮／告別式（有無生前契約、希望採取的儀式、風格）與墓葬形式（火葬進塔、樹葬、海葬等）。",
+            "checked": false,
+            "many": false
+        },
+        {
+            "text": "交友關係整理、說明及聯繫方式（突發意外、病倒或過世時，希望聯繫或通知的對象）。",
+            "checked": false,
+            "many": false
+        },
+        {
+            "text": "完成「終活筆記」：",
+            "checked": false,
+            "many": [
+                "詳列上述資料，包括醫療資訊（平常就醫醫院、病史、常用藥等）",
+                "數位帳號整理（手機、網路信箱、社群軟體的解鎖密碼等）",
+                "留給家人及朋友的心裡話、感謝等。"
+            ]
+        }
+    ],
+    "voteText": [
+        "玩高空彈跳、搭熱氣球…，嘗試以前沒做過的瘋狂事！",
+        "入住五星級飯店總統套房、吃貴死人的餐廳，享受人生最奢華的一夜。",
+        "在大巨蛋開演唱會，我要做人生舞台的巨星！",
+        "買一塊荒地植林、把錢捐出去...，造福世界。",
+        "到老闆辦公室拍桌丟辭呈，這輩子不再當社畜！",
+        "向暗戀、初戀告白，說出心裡話，為自己勇敢一次。",
+        "與家人共進晚餐，好好告別。"
+    ],
+    "popup2": [
+        {
+            "id": "answer1",
+            "optionValue": 1,
+            "text": "玩高空彈跳、搭熱氣球…，嘗試以前沒做過的瘋狂事！",
+            "checked": false,
+            "textbox": false
+        },
+        {
+            "id": "answer2",
+            "optionValue": 2,
+            "text": "入住五星級飯店總統套房、吃貴死人的餐廳，享受人生最奢華的一夜。",
+            "checked": false,
+            "textbox": false
+        },
+        {
+            "id": "answer3",
+            "optionValue": 3,
+            "text": "在大巨蛋開演唱會，我要做人生舞台的巨星！",
+            "checked": false,
+            "textbox": false
+        },
+        {
+            "id": "answer4",
+            "optionValue": 4,
+            "text": "買一塊荒地植林、把錢捐出去...，造福世界。",
+            "checked": false,
+            "textbox": false
+        },
+        {
+            "id": "answer5",
+            "optionValue": 5,
+            "text": "到老闆辦公室拍桌丟辭呈，這輩子不再當社畜！",
+            "checked": false,
+            "textbox": false
+        },
+        {
+            "id": "answer6",
+            "optionValue": 6,
+            "text": "向暗戀、初戀告白，說出心裡話，為自己勇敢一次。",
+            "checked": false,
+            "textbox": false
+        },
+        {
+            "id": "answer7",
+            "optionValue": 7,
+            "text": "與家人共進晚餐，好好告別。",
+            "checked": false,
+            "textbox": false
+        },
+        {
+            "id": "answer8",
+            "optionValue": 8,
+            "text": "我最想做的是",
+            "checked": false,
+            "textbox": true
+        }
+    ],
+    "person": [
+        
+        {
+            "img": "assets/images/person/person1.jpg",
+            "name":"吳念真",
+            "title": "綠光創藝董事長",
+            "quote": "安靜、平淡的面對離開這件事，希望盡量不要讓自己成為別人的負擔。",
+            "link":"https://thebetteraging.businesstoday.com.tw/article/detail/202408120016"
+        },
+        {
+            "img": "assets/images/person/person2.jpg",
+            "name":"熊美玲",
+            "title": "作曲人、歌手",
+            "quote": "走出悲傷最好的方式，是要讓自己足夠傷心，哭到不能再哭，那就可以不哭了！",
+            "link":"https://thebetteraging.businesstoday.com.tw/article/detail/202408300025"
+        },
+        {
+            "img": "assets/images/person/person3.jpg",
+            "name":"楊玉欣",
+            "title": "前立委、罕病天使",
+            "quote": "「我的醫療決定，要貫徹到我失去意識以後。」病患的知情、選擇、決定權應受保護。",
+            "link":"https://thebetteraging.businesstoday.com.tw/article/detail/202408140069"
+        },
+        {
+            "img": "assets/images/person/person4.jpg",
+            "name":"楊賢英",
+            "title": "作家、收納達人",
+            "quote": "別讓你的過去成為負擔，做好老後斷捨離，放下昔日的光輝，才能真正活得精采、活得自由。",
+            "link":"https://thebetteraging.businesstoday.com.tw/article/detail/202407150029"
+        },
+        {
+            "img": "assets/images/person/person5.jpg",
+            "name":"朱全斌",
+            "title": "作家、主持人",
+            "quote": "所謂遺憾，是因為有許多「來不及」，許多事不該等待，日常生活中該做就去做。",
+            "link":"https://thebetteraging.businesstoday.com.tw/article/detail/202408070063"
+        },
+        {
+            "img": "assets/images/person/person6.jpg",
+            "name":"郭慧娟",
+            "title": "台灣「死亡咖啡館」創辦人",
+            "quote": "談生死，都是為了愛、懂得更珍惜，走到人生最後一哩路時，爽快放下一切。",
+            "link":"https://thebetteraging.businesstoday.com.tw/article/detail/202408150041"
+        },
+        {
+            "img": "assets/images/person/person7.jpg",
+            "name":"釋普安",
+            "title": "大林慈濟醫院<br>臨床宗教師顧問",
+            "quote": "人生有太多變數、太多放不下，所以在你好好時就要開始做整理，坦誠面對生命。",
+            "link":"https://thebetteraging.businesstoday.com.tw/article/detail/202409090038"
+        },
+        {
+            "img": "assets/images/person/person8.jpg",
+            "name":"李昭慧",
+            "title": "心理師、靈性關懷人員",
+            "quote": "忙碌是為了不想面對哀傷，但其實「即將說再見」才是最折騰人的。",
+            "link":"https://thebetteraging.businesstoday.com.tw/article/detail/202408020036"
+        }
+    ],
+    "movie": [
+        {
+            "img": "assets/images/movie1.jpg",
+            "name": "——《回眸》",
+            "quote": "媽媽死了很難過，但還是可以有快樂！《回眸》法師體悟：人有身體會死，愛沒身體所以一直在",
+            "link": "https://thebetteraging.businesstoday.com.tw/article/detail/202110270020",
+            "category": "看完整文章"
+        },
+        {
+            "img": "assets/images/movie2.jpg",
+            "name": "——《一個人的朝聖》",
+            "quote": "他徒步804公里，給20年未見癌末老同事打氣！電影《一個人的朝聖》談充實的獨老、精采老後追夢",
+            "link": "https://thebetteraging.businesstoday.com.tw/article/detail/202308080038",
+            "category": "看完整文章"
+        },
+        {
+            "img": "assets/images/movie3.jpg",
+            "name": "——《離別的食譜》",
+            "quote": "他為癌末妻煮暖心料理，用味道銘記每一刻…韓劇《離別的食譜》：相愛如此艱難，至少我們已好好告別",
+            "link": "https://thebetteraging.businesstoday.com.tw/article/detail/202404300061",
+            "category": "看完整文章"
+        },
+        {
+            "img": "assets/images/movie4.jpg",
+            "name": "——《可可夜總會》",
+            "quote": "「也許我們無力阻擋時間的流逝，我們也必將與家人與愛人生死相隔。但死並非生的對立面，而是作為生的一部分永存，人類的記憶，便是對靈魂的延續。」",
+            "link": "https://youtu.be/KtbCQDXiBdE?si=osFdOa1-9-PnDSlj",
+            "category": "看電影預告片"
+        },
+        {
+            "img": "assets/images/movie5.jpg",
+            "name": "——《仙人畫家：熊谷守一》",
+            "quote": "「我的心裡有一座庭院，能裝下的人很少。我的世界很小很小，但對我來說剛剛好。」",
+            "link": "https://youtu.be/lNFGD9I7cmU?si=lPV6LKnBHAqkAajC",
+            "category": "看電影預告片"
+        },
+        {
+            "img": "assets/images/movie6.jpg",
+            "name": "——《天外奇蹟》",
+            "quote": "已逝妻子的遺願：「謝謝你這段旅程的陪伴，現在換你去展開新的冒險吧！」",
+            "link": "https://www.youtube.com/watch?v=HWEW_qTLSEE",
+            "category": "看電影預告片"
+        },
+        {
+            "img": "assets/images/movie7.jpg",
+            "name": "——《我的鯨魚老爸》",
+            "quote": "「我要確定她能好好生活下去，我們不能放棄她。」",
+            "link": "https://www.youtube.com/watch?v=J7ouTvygVcE",
+            "category": "看電影預告片"
+        },
+        {
+            "img": "assets/images/movie8.jpg",
+            "name": "——《終極假期》",
+            "quote": "「不要等到生命快結束了，才發現自己從來沒有真正地活過。」",
+            "link": "https://www.youtube.com/watch?v=JO0NSRPcPFs",
+            "category": "看電影預告片"
+        }
+    ],
+    "footerText1": "專題製作：數位內容部<br>統籌製作：陳俍任、郭美懿<br>採訪記者：郭美懿、黃靖文、林暐鈞、彭蕙珍、陳俍任<br>產品工程：劉怡君、王信傑、郭云瑛<br>視覺設計：陳美環、蔡政憲、張亞芸<br>製作單位：今周刊數位內容部",
+    "footerText2": "今周文化事業(股)公司/今周行銷(股)公司/今周出版(股)公司 版權所有<br>本網站圖文非經本社同意不得刊載<br>Copyright © 2024 Business Today All rights reserved"
+}
